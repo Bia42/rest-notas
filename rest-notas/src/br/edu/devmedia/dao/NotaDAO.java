@@ -39,7 +39,7 @@ public class NotaDAO {
 
 		Connection conexao = BDConfig.getConnection();
 
-		String sql = "SELECT * FROM NOTA WHERE ID = ?";
+		String sql = "SELECT * FROM NOTAS WHERE ID = ?";
 
 		PreparedStatement statement = conexao.prepareStatement(sql);
 		statement.setInt(1, idNota);
